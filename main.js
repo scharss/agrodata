@@ -81,7 +81,7 @@ function getLocation() {
   
   
   var presion = myJson.main.pressure;
-  document.getElementById("demo8").innerHTML = presion+" mbar";
+  document.getElementById("demo8").innerHTML = presion+" hPa";
   
   var velocidaddelviento = myJson.wind.speed;
   
