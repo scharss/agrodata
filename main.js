@@ -146,7 +146,7 @@ var formattedTime2 = hours + ':' + minutes.substr(-2) + ':' + seconds.substr(-2)
             
              
               L.marker([lat,long ]).addTo(map)
-      .bindPopup('Aca estoy');
+      .bindPopup('Aquí Estás');
       //.openPopup();
   
 
