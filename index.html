@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Agro Data</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.4.0/dist/leaflet.css" />
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+    <script src="main.js"></script>
+    
+</head>
+<body onload="getLocation()">
+
+    
+    
+        <div id="mapContainer"></div>    
+        
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+
+            
+
+        <div id="basemaps-wrapper" class="leaflet-bar">
+          
+      
+          <p><h5>Estadísticas</h5></p>
+          <button onclick="mostrar()" class="btn btn-primary">Mostrar</button> 
+          <button onclick="ocultar()" class="btn btn-secondary">Ocultar</button> 
+          <section id="s1" class="hidden">
+
+              <table>
+                  
+                  
+                  <tr>
+                    <td><strong>Ciudad:</strong></td>
+                    <td><p id="demo3"></p></td>
+                    <td><strong>Ubicación:</strong></td>
+                    <td><p id="demo4"></p></td>
+                  </tr>
+                  <tr>
+                    <td><strong>Salida del Sol:</strong></td>
+                    <td><p id="demo13"></p></td>
+                    <td><strong>Puesta del Sol:</strong></td>
+                    <td><p id="demo14"></p> </td>
+                  </tr>
+                  <tr>
+                      <td><strong>Humedad:</strong></td>
+                      <td><p id="demo"></p></td>
+                      <td><strong>Temperatura:</strong></td>
+                      <td><p id="demo7"></p> </td>
+                    </tr>
+                    <tr>
+                        <td><strong>Presión:</strong></td>
+                        <td><p id="demo8"></p></td>
+                        <td><strong>Velocidad del Viento:</strong></td>
+                        <td><p id="demo9"></p></td>
+                      </tr>
+
+                </table>  
+         
+          <!--<p><strong>Ciudad</strong></p>  
+          <p id="demo3"></p> 
+          <p><strong>Ubicación</strong></p>
+          <p id="demo4"></p>
+          
+          <p><strong>Salida del Sol</strong></p>  
+          <p id="demo13"></p> 
+          <p><strong>Puesta del Sol</strong></p>  
+          <p id="demo14"></p>        
+          
+          <p><strong>Humedad</strong></p>  
+          <p id="demo"></p>
+          <p><strong>Temperatura</strong></p>  
+          <p id="demo7"></p>
+          <p><strong>Presión</strong></p>  
+          <p id="demo8"></p>
+          <p><strong>Velocidad del Viento</strong></p>  
+          <p id="demo9"></p>-->  
+        </section> 
+          </div>
+        </div>
+      </div>
+    </div>
+
+        <script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js"></script>
+
+        <script>
+            function ocultar() {
+              document.getElementById("s1").style.display = "none";
+            }
+
+            function mostrar(){
+              document.getElementById("s1").style.display = "block";
+            }
+            </script>
+          
+
+
+
+<!--*********************************************************************************-->
+
+        
+
+
+</body>
+</html>

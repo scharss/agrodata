@@ -1,0 +1,40 @@
+#mapContainer{
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    
+}
+
+#basemaps-wrapper {
+    position: absolute;
+    top: 50px;
+    right: 10px;
+    z-index: 400;
+    background: white;
+    padding: 10px;
+  }
+  #basemaps {
+    margin-bottom: 5px;
+  }
+
+  .hidden{
+      display:none;
+  }
+section{
+    display:block;
+}
+
+table,  td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+ td {
+  padding: 1px;
+  text-align: left;
+}
+
+table{
+  margin-top: 5px;
+}
