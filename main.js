@@ -86,7 +86,7 @@ function getLocation() {
   var velocidaddelviento = myJson.wind.speed;
   
   console.log(velocidaddelviento);
-  document.getElementById("demo9").innerHTML = velocidaddelviento+ " Km/h";
+  document.getElementById("demo9").innerHTML = velocidaddelviento+ " m/s";
 
 //***************Salida del sol**************** */
   var salidasol = myJson.sys.sunrise;
