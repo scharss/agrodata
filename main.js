@@ -49,11 +49,13 @@ function getLocation() {
       var ciudad = myJson.name;
       document.getElementById("demo3").innerHTML = ciudad;
   
-  
-      var coordenx = myJson.coord.lat;
-      var coordeny = myJson.coord.lon;
-      document.getElementById("demo4").innerHTML ="Lat " +coordenx + " "+"Lon " + coordeny;
-      //document.getElementById("demo5").innerHTML = coordeny;
+  var pais = myJson.sys.country;
+  console.log(pais);
+  document.getElementById("demo4").innerHTML =pais;
+      //var coordenx = myJson.coord.lat;
+      //var coordeny = myJson.coord.lon;
+      document.getElementById("demo44").innerHTML ="Lat: "+lat.toFixed(20);
+      document.getElementById("demo55").innerHTML ="Lon: "+ long.toFixed(20);
   
   
   
@@ -81,12 +83,12 @@ function getLocation() {
   
   
   var presion = myJson.main.pressure;
-  document.getElementById("demo8").innerHTML = presion+" hPa";
+  document.getElementById("demo8").innerHTML = presion+" mbar";
   
   var velocidaddelviento = myJson.wind.speed;
   
   console.log(velocidaddelviento);
-  document.getElementById("demo9").innerHTML = velocidaddelviento+ " m/s";
+  document.getElementById("demo9").innerHTML = velocidaddelviento+ " Km/h";
 
 //***************Salida del sol**************** */
   var salidasol = myJson.sys.sunrise;
@@ -146,7 +148,7 @@ var formattedTime2 = hours + ':' + minutes.substr(-2) + ':' + seconds.substr(-2)
             
              
               L.marker([lat,long ]).addTo(map)
-      .bindPopup('Aquí Estás');
+      .bindPopup('Aca estoy');
       //.openPopup();
   
 
